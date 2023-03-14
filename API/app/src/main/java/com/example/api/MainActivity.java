@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
@@ -59,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                                 try {
                                     //Display data to User
                                     text.setText(response.getString("upi_id"));
+                                    //Log.d("test", response.getString("upi_id"));
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
